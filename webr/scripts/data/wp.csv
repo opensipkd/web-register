@@ -1,0 +1,5 @@
+id,kode,nama,status,alamat_1,alamat_2,kelurahan,kecamatan,kota,user_id,provinsi,email,unit_id
+1,"bendahara","Bendahara",1,"Alamat1","Alamat2","Kelurahan","Kecamatan","Kota",4,"Provinsi","bendahara@local",208
+2,"wp","Wajib Pajak",1,"Alamat1","Alamat2","Kelurahan","Kecamatan","Kota",5,"Provinsi","wp@local",208
+3,"bendahara2","Bendahara 2",1,"Alamat1","Alamat2","Kelurahan","Kecamatan","Kota",4,"Provinsi","bendahara2@local",24
+4,"wp2","Wajib Pajak 2",1,"Alamat1","Alamat2","Kelurahan","Kecamatan","Kota",,"Provinsi","wp2@local",24

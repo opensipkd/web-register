@@ -1,0 +1,7 @@
+<tr>
+    <td>{kode}</td>
+    <td>{nama}</td>
+    <td>{status}</td>
+    <td>{tahun}</td>
+    <td>{tarif}</td>
+</tr>

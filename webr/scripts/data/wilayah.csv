@@ -1,0 +1,29 @@
+id,kode,nama,ibukota,level_id,parent_id
+1,"32.00","Provinsi Jawa Barat","Bandung",1,
+2,"32.01","Kabupaten Bogor","Cibinong",2,1
+3,"32.02","Kabupaten Sukabumi","Pelabuhanratu",2,1
+4,"32.03","Kabupaten Cianjur","Cianjur",2,1
+5,"32.04","Kabupaten Bandung","Soreang",2,1
+6,"32.05","Kabupaten Garut","Tarogong Kidul",2,1
+7,"32.06","Kabupaten Tasikmalaya","Singaparna",2,1
+8,"32.07","Kabupaten Ciamis","Ciamis",2,1
+9,"32.08","Kabupaten Kuningan","Kuningan",2,1
+10,"32.09","Kabupaten Cirebon","Sumber",2,1
+11,"32.10","Kabupaten Majalengka","Majalengka",2,1
+12,"32.11","Kabupaten Sumedang","Sumedang",2,1
+13,"32.12","Kabupaten Indramayu","Indramayu",2,1
+14,"32.13","Kabupaten Subang","Subang",2,1
+15,"32.14","Kabupaten Purwakarta","Purwakarta",2,1
+16,"32.15","Kabupaten Karawang","Karawang",2,1
+17,"32.16","Kabupaten Bekasi","Cikarang",2,1
+18,"32.17","Kabupaten Bandung Barat","Ngamprah",2,1
+19,"32.18","Kabupaten Pangandaran","Parigi",2,1
+20,"32.71","Kota Bogor","-",2,1
+21,"32.72","Kota Sukabumi","-",2,1
+22,"32.73","Kota Bandung","-",2,1
+23,"32.74","Kota Cirebon","-",2,1
+24,"32.75","Kota Bekasi","-",2,1
+25,"32.76","Kota Depok","-",2,1
+26,"32.77","Kota Cimahi","-",2,1
+27,"32.78","Kota Tasikmalaya","-",2,1
+28,"32.79","Kota Banjar","-",2,1

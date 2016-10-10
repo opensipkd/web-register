@@ -1,0 +1,135 @@
+kode,nama,path,factory,perm_name,disabled,created,updated,create_uid
+"home","Beranda","/",,"''",0,"2015-03-08 16:45:45",,1
+"login","Masuk","/login",,"''",0,"2015-03-08 16:45:45",,1
+"logout","Logout","/logout",,"view",0,"2015-03-08 16:45:45",,1
+"password","Ubah password","/password",,"edit",0,"2015-03-08 16:45:45",,1
+"forbidden","Forbidden","/forbidden",,"view",0,"2015-03-08 16:45:45",,1
+"user","Users","/user",,"view",0,"2015-03-08 16:45:45",,1
+"user-act","Baca User ","/user/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"user-add","Tambah user","/user/add",,"add",0,"2015-03-08 16:45:45",,1
+"user-edit","Edit user","/user/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"user-delete","Hapus user","/user/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"user-csv","CSV user","/user/{csv}/csv",,"read",0,"2015-03-08 16:45:45",,1
+"user-pdf","PDF user","/user/{pdf}/pdf",,"read",0,"2015-03-08 16:45:45",,1
+"usergroup","User Group","/usergroup",,"read",0,"2015-03-08 16:45:45",,1
+"usergroup-act","User Group Action","/usergroup/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"usergroup-add","Tambah User Group","/usergroup/add",,"add",0,"2015-03-08 16:45:45",,1
+"usergroup-delete","Hapus User Group","/usergroup/{id}/{id2}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"groupperm","Group Permission","/groupperm",,"read",0,"2015-03-08 16:45:45",,1
+"groupperm-act","Group Permission Action","/groupperm/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"groupperm-add","Tambah Group Permission","/groupperm/add",,"add",0,"2015-03-08 16:45:45",,1
+"groupperm-delete","Hapus Group Permission","/groupperm/{id}/{id2}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"user-unit","User OPD","/user-unit",,"read",0,"2015-03-08 16:45:45",,1
+"user-unit-act","User OPD Act","/user-unit/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"user-unit-add","Tambah User OPD","/user-unit/add",,"add",0,"2015-03-08 16:45:45",,1
+"user-unit-delete","Hapus User OPD","/user-unit/{id}/{id2}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"group","Group","/group",,"read",0,"2015-03-08 16:45:45",,1
+"group-add","Tambah Group","/group/add",,"add",0,"2015-03-08 16:45:45",,1
+"group-act","Baca Group","/group/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"group-edit","Edit Group","/group/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"group-delete","Hapus Group","/group/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"pkb","List Pajak Kendaraan Bermotor","/pkb",,"read",0,"2015-03-08 16:45:45",,1
+"pkb-add","Pajak Kendaraan Bermotor","/pkb/add",,"add",0,"2015-03-08 16:45:45",,1
+"pap","List Pajak Air Permukaan","/pap",,"read",0,"2015-03-08 16:45:45",,1
+"pap-add","Pajak Air Permukaan","/pap/add",,"add",0,"2015-03-08 16:45:45",,1
+"rekening","Kode Rekening","/rekening",,"read",0,"2015-03-08 16:45:45",,1
+"rekening-act","Baca Kode Rekening","/rekening/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"rekening-add","Tambah Kode Rekening","/rekening/add",,"add",0,"2015-03-08 16:45:45",,1
+"rekening-edit","Edit Kode Rekening","/rekening/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"rekening-delete","Hapus Kode Rekening","/rekening/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"rekening-csv","CSV Kode Rekening","/rekening/{csv}/csv",,"read",0,"2015-03-08 16:45:45",,1
+"rekening-pdf","PDF Kode Rekening","/rekening/{pdf}/pdf",,"read",0,"2015-03-08 16:45:45",,1
+"skpd","Unit Kerja/OPD","/skpd",,"read",0,"2015-03-08 16:45:45",,1
+"skpd-act","Baca Unit Kerja/OPD","/skpd/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"skpd-add","Tambah Unit Kerja/OPD","/skpd/add",,"add",0,"2015-03-08 16:45:45",,1
+"skpd-edit","Edit Unit Kerja/OPD","/skpd/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"skpd-delete","Hapus Unit Kerja/OPD","/skpd/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"skpd-csv","CSV Unit Kerja/OPD","/skpd/{csv}/csv",,"read",0,"2015-03-08 16:45:45",,1
+"skpd-pdf","PDF Unit Kerja/OPD","/skpd/{pdf}/pdf",,"read",0,"2015-03-08 16:45:45",,1
+"skpd-rekening","Rekening OPD","/skpd/rekening",,"read",0,"2015-03-08 16:45:45",,1
+"skpd-rekening-act","Baca Rekening OPD","/skpd/rekening/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"skpd-rekening-add","Tambah Rekening OPD","/skpd/rekening/add",,"add",0,"2015-03-08 16:45:45",,1
+"skpd-rekening-edit","Edit Rekening OPD","/skpd/rekening/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"skpd-rekening-delete","Hapus Rekening OPD","/skpd/rekening/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"jabatan","Jabatan","/jabatan",,"read",0,"2015-03-08 16:45:45",,1
+"jabatan-act","Baca Jabatan","/jabatan/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"jabatan-add","Tambah Jabatan","/jabatan/add",,"add",0,"2015-03-08 16:45:45",,1
+"jabatan-edit","Edit Jabatan","/jabatan/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"jabatan-delete","Hapus Jabatan","/jabatan/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"jabatan-csv","CSV Jabatan/OPD","/jabatan/{csv}/csv",,"read",0,"2015-03-08 16:45:45",,1
+"jabatan-pdf","PDF Jabatan/OPD","/jabatan/{pdf}/pdf",,"read",0,"2015-03-08 16:45:45",,1
+"pegawai","Pegawai","/pegawai",,"read",0,"2015-03-08 16:45:45",,1
+"pegawai-act","Baca Pegawai","/pegawai/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"pegawai-add","Tambah Pegawai","/pegawai/add",,"add",0,"2015-03-08 16:45:45",,1
+"pegawai-edit","Edit Pegawai","/pegawai/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"pegawai-delete","Hapus Pegawai","/pegawai/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"pegawai-csv","CSV Pegawai","/pegawai/{csv}/csv",,"read",0,"2015-03-08 16:45:45",,1
+"pegawai-pdf","PDF Pegawai","/pegawai/{pdf}/pdf",,"read",0,"2015-03-08 16:45:45",,1
+"pajak","Tarif","/pajak",,"read",0,"2015-03-08 16:45:45",,1
+"pajak-act","Baca Tarif","/pajak/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"pajak-add","Tambah Tarif","/pajak/add",,"add",0,"2015-03-08 16:45:45",,1
+"pajak-edit","Edit Tarif","/pajak/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"pajak-delete","Hapus Tarif","/pajak/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"pajak-csv","CSV Tarif","/pajak/{csv}/csv",,"read",0,"2015-03-08 16:45:45",,1
+"pajak-pdf","PDF Tarif","/pajak/{pdf}/pdf",,"read",0,"2015-03-08 16:45:45",,1
+"wilayah","Wilayah","/wilayah",,"read",0,"2015-03-08 16:45:45",,1
+"wilayah-act","Baca Wilayah","/wilayah/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"wilayah-add","Tambah Wilayah","/wilayah/add",,"add",0,"2015-03-08 16:45:45",,1
+"wilayah-edit","Edit Wilayah","/wilayah/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"wilayah-delete","Hapus Wilayah","/wilayah/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"wilayah-csv","CSV Wilayah","/wilayah/{csv}/csv",,"read",0,"2015-03-08 16:45:45",,1
+"wilayah-pdf","PDF Wilayah","/wilayah/{pdf}/pdf",,"read",0,"2015-03-08 16:45:45",,1
+"wp","Penyetor","/wp",,"read",0,"2015-03-08 16:45:45",,1
+"wp-act","Baca Penyetor","/wp/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"wp-add","Tambah Penyetor","/wp/add",,"add",0,"2015-03-08 16:45:45",,1
+"wp-edit","Edit Penyetor","/wp/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"wp-delete","Hapus Penyetor","/wp/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"wp-csv","CSV Penyetor","/wp/{csv}/csv",,"read",0,"2015-03-08 16:45:45",,1
+"wp-pdf","PDF Penyetor","/wp/{pdf}/pdf",,"read",0,"2015-03-08 16:45:45",,1
+"op","Objek","/op",,"read",0,"2015-03-08 16:45:45",,1
+"op-act","Baca Objek","/op/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"op-add","Tambah Objek","/op/add",,"add",0,"2015-03-08 16:45:45",,1
+"op-edit","Edit Objek","/op/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"op-delete","Hapus Objek","/op/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"op-csv","CSV Objek","/op/{csv}/csv",,"read",0,"2015-03-08 16:45:45",,1
+"op-pdf","PDF Objek","/op/{pdf}/pdf",,"read",0,"2015-03-08 16:45:45",,1
+"arinvoice","Tagihan","/arinvoice",,"read",0,"2015-03-08 16:45:45",,1
+"arinvoice-act","Tagihan Action","/arinvoice/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"arinvoice-add","Tambah Tagihan","/arinvoice/add",,"add",0,"2015-03-08 16:45:45",,1
+"arinvoice-edit","Edit Tagihan","/arinvoice/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"arinvoice-delete","Hapus Tagihan","/arinvoice/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"arinvoice-csv","CSV Tagihan","/arinvoice/{csv}/csv",,"read",0,"2015-03-08 16:45:45",,1
+"arinvoice-pdf","PDF Tagihan","/arinvoice/{pdf}/pdf",,"read",0,"2015-03-08 16:45:45",,1
+"arsspd","Penerimaan","/arsspd",,"read",0,"2015-03-08 16:45:45",,1
+"arsspd-act","Baca SSPD","/arsspd/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"arsspd-add","Tambah Penerimaan","/arsspd/add",,"add",0,"2015-03-08 16:45:45",,1
+"arsspd-edit","Edit Penerimaaan","/arsspd/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"arsspd-delete","Hapus Penerimaan","/arsspd/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"arsspd-csv","CSV Penerimaan","/arsspd/{csv}/csv",,"read",0,"2015-03-08 16:45:45",,1
+"arsspd-pdf","PDF Penerimaan","/arsspd/{pdf}/pdf",,"read",0,"2015-03-08 16:45:45",,1
+"arsts","Setoran","/arsts",,"read",0,"2015-03-08 16:45:45",,1
+"arsts-act","Setoran Action","/arsts/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"arsts-add","Tambah Setoran","/arsts/add",,"add",0,"2015-03-08 16:45:45",,1
+"arsts-edit","Edit Setoran","/arsts/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"arsts-delete","Hapus Setoran","/arsts/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"arsts-csv","CSV Setoran","/arsts/{csv}/csv",,"read",0,"2015-03-08 16:45:45",,1
+"arsts-pdf","PDF Setoran","/arsts/{pdf}/pdf",,"read",0,"2015-03-08 16:45:45",,1
+"arstsitem","Setoran Detail","/arstsitem",,"read",0,"2015-03-08 16:45:45",,1
+"arstsitem-act","Setoran Detail Action","/arstsitem/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"arstsitem-add","Tambah Setoran Detail","/arstsitem/{id}/add",,"add",0,"2015-03-08 16:45:45",,1
+"arstsitem-edit","Edit Setoran Detail","/arstsitem/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"arstsitem-delete","Hapus Setoran Detail","/arstsitem/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"arstsitem-list","Tambah Setoran Detail","/arstsitem/{id}/list",,"add",0,"2015-03-08 16:45:45",,1
+"artbp","TBP","/artbp",,"read",0,"2015-03-08 16:45:45",,1
+"artbp","TBP","/artbp",,"read",0,"2015-03-08 16:45:45",,1
+"artbp-act","TBP Baca","/artbp/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"artbp-add","TBP Tambah","/artbp/add",,"add",0,"2015-03-08 16:45:45",,1
+"artbp-edit","TBP Edit","/artbp/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"artbp-delete","Hapus TBP","/artbp/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1
+"artbp-csv","TBP CSV","/artbp/{csv}/csv",,"csv",0,"2015-03-08 16:45:45",,1
+"artbp-pdf","TBP PDF","/artbp/{pdf}/pdf",,"pdf",0,"2015-03-08 16:45:45",,1
+"artbpinv","TBP","/artbpinv",,"read",0,"2015-03-08 16:45:45",,1
+"artbpinv-act","Baca TBP Invoice","/artbpinv/{act}/act",,"read",0,"2015-03-08 16:45:45",,1
+"artbpinv-add","Tambah TBP Invoice","/artbpinv/add",,"add",0,"2015-03-08 16:45:45",,1
+"artbpinv-edit","Edit TBP Invoice","/artbpinv/{id}/edit",,"edit",0,"2015-03-08 16:45:45",,1
+"artbpinv-delete","Hapus TBP Invoice","/artbpinv/{id}/delete",,"delete",0,"2015-03-08 16:45:45",,1

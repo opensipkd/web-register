@@ -1,0 +1,180 @@
+
+[opensipkd] Testing WEB REGISTER
+Social Yahoo
+Agustiana aa.gustiana@yahoo.com [opensipkd] <opensipkd@yahoogroups.com>
+To	opensipkd@yahoogroups.com Sep 25 at 10:44 PM
+ 
+WEB-REGISTER
+
+KOORDINATOR: Aris
+ATTN: gilang/eko/milla
+
+url: http://webr-devel.opensipkd.com
+1. Aplikasi untuk mencatat pendapatan yang masuk di setiap SKPD
+2. SKPD/Bendhara/WP/WR melakukan setoram ke bank dengan membawa ID billing
+
+Userid: admin   
+Password:admin
+Langkah2 sebagai admin
+1. Buat wajib pajak Login di checklist
+2. Buat Objek Pajak
+3. Buat Pegawai Login di checklist
+
+Menu:
+1. Bendahara
+    A. TBP:
+       1. Lakukan Input data standard
+       2. Lakukan Input Data Anomali
+       3. Chek apakah bendahara bisa:
+          1. Tambah Data untu SKPD/OPD lain
+          2. Edit Data untuk SKPD/OPD lain (melakukan direct url)
+          3. hapus data SKPD/OPD Lain dengan direct url
+        evaluasi : 
+	1. pada grid kolom Status, belum di konversi ke keterangan nya masih berupa angka field nya.
+	2. tombol print belum jalan.
+	3. ada error ketika hapus data, karena error pada artbp.py baris ke 494, row.arsspds tidak ada dalam tabel artbp.
+	4. edit, hapus terhadap SKPD lain ternyata BISA TERJADI, baik melalui langsung atau direct URL.
+      
+    B.  Penyetor/WP/WR/WS
+       1. Lakukan Input data standard
+       2. Lakukan Input Data Anomali
+       3. Chek apakah bendahara bisa:
+          1. Tambah Data untu SKPD/OPD lain
+          2. Edit Data untuk SKPD/OPD lain (melakukan direct url)
+          3. hapus data SKPD/OPD Lain dengan direct url
+        evaluasi :
+	1. ada error ketika hapus data, karena error pada wp.py baris ke 323, dengan keterangan sebagai berikut :
+	    InvalidRequestError: Can't call Query.update() or Query.delete() when join(), outerjoin(), select_from(), or from_self() has been called
+	    artinya pada baris itu tidak perlu ada .join karena sudah terpanggil tanpa itu juga.
+	2. semua direct URL sukses terfilter.
+
+    C.  Objek Pajak
+       1. Lakukan Input data standard
+       2. Lakukan Input Data Anomali
+       3. Chek apakah bendahara bisa:
+          1. Tambah Data untuk SKPD/OPD lain
+          2. Edit Data untuk SKPD/OPD lain (melakukan direct url)
+          3. hapus data SKPD/OPD Lain dengan direct url
+         evaluasi : 
+	1. tambah, edit, hapus terhadap SKPD lain ternyata BISA TERJADI, baik melalui langsung atau direct URL.
+    
+2. No Bayar
+    A. User Bendahara
+        1. Input Data Standar
+        2. Input Data Untuk SKPD Lain
+        3. Edit Data untuk SKPD/OPD Lain dengan direct url
+        4. Hapus Data untuk SKPD/OPD Lain dengan direct url
+       evaluasi : 
+	1. edit, hapus terhadap SKPD lain ternyata BISA TERJADI, melalui direct URL.        
+
+    B. User WP/WR/WS
+        1. Input Data Standar
+        2. Input Data Untuk WP/WR/WS Lain
+        3. Edit Data untuk WP/WR/WS dengan direct url
+        4. Hapus Data untuk WP/WR/WS dengan direct url
+       evaluasi :
+	1. edit, hapus terhadap WP/WR/WS lain ternyata BISA TERJADI, melalui direct URL.
+
+* Direct URL adalah dengan melakukan inject data mengetikan langsung url tanpa melakukan proses menu
+USER BUD adalah user admin bisa akses semua menu baik Bendahara Maupun Penerimaan
+
+Saya butuh informasi testing senin sore sudah bisa terinformasikan
+
+TODO:
+
+1. TBP
+        1. print merupakan printout kwitansi penerimaan 
+            +------------------------------------------------------------------+
+            | PEMERINTAH KOTA/KABUPATEN DEMO                                   |
+            | DINAS/BADAN                                                      |
+            | -----------------------------------------------------------------|
+            |                                                                  |
+            |                 BUKTI PENERIMAAN KAS BENDAHARA                   |
+            |                                                                  |
+            | TELAH TERIMA DARI                                                |
+            | NAMA    : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             |
+            | ALAMAT  : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             |
+            |           XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             |
+            | REKENING: 4.1.X.XX.XX.XX                                         |
+            | URAIAN  : XXXXXXXXXXXX(NAMA REKENING)                            |
+            | POKOK   : NNNNNNNNNNNNNNNNNNN                                    |
+            | DENDA   : NNNNNNNNNNNNNNNNNNN                                    |
+            | BUNGA   : NNNNNNNNNNNNNNNNNNN                                    |
+            | JUMLAH  : NNNNNNNNNNNNNNNNNNN                                    |
+            |           (DALAM HURUF)                                          |
+            |                                            DD/MM/YYYY            |
+            |    PENYETOR                                 PENERIMA             |
+            |                                                                  |
+            |                                                                  |
+            |                                                                  |
+            | (NAMA)                                     BENDAHARA             |
+            +------------------------------------------------------------------+
+            
+        2. CSV merupakan register penerimaan berdasarkan tanggal terima
+        3. PDF merupakan register penerimaan dalam bentuk PDF group by SKPD dan kode rekening
+           Format PDF disesuaikan dengan hasil CSV
+        
+2. NO BAYAR
+        1. print merupakan printout kwitansi penerimaan 
+            +------------------------------------------------------------------+
+            | PEMERINTAH KOTA/KABUPATEN DEMO                                   |
+            | DINAS/BADAN                                                      |
+            | -----------------------------------------------------------------|
+            |                                                                  |
+            |                 SLIP SETORAN PENDAPATAN DAERAH                   | 
+            |                                                                  |
+            | NAMA    : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             |
+            | ALAMAT  : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             |
+            |           XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             |
+            | REKENING: 4.1.X.XX.XX.XX                                         |
+            | URAIAN  : XXXXXXXXXXXX(NAMA REKENING)                            |
+            | POKOK   : NNNNNNNNNNNNNNNNNNN                                    |
+            | DENDA   : NNNNNNNNNNNNNNNNNNN                                    |
+            | BUNGA   : NNNNNNNNNNNNNNNNNNN                                    |
+            | JUMLAH  : NNNNNNNNNNNNNNNNNNN                                    |
+            |           (DALAM HURUF)                                          |
+            |                                           DD/MM/YYYY             |
+            |    PENYETOR                                 PENERIMA             |
+            |                                                                  |
+            |                                                                  |
+            |                                                                  |
+            |    (NAMA)                                   TELLER               |
+            +------------------------------------------------------------------+
+            
+        2. CSV merupakan register NO BAYAR berdasarkan tanggal terima
+        3. PDF merupakan register NO BAYAR dalam bentuk PDF group by SKPD dan kode rekening
+           Format PDF disesuaikan dengan hasil CSV
+        
+3. PENERIMAAN
+        1. print merupakan printout kwitansi penerimaan (SSPD/SSRD/BEND IX)
+            +------------------------------------------------------------------+
+            | PEMERINTAH KOTA/KABUPATEN DEMO                                   |
+            | DINAS/BADAN                                                      |
+            | -----------------------------------------------------------------|
+            |                                                                  |
+            |                    BUKTI PENERIMAAN KAS                          | 
+            |                                                                  |
+            | NAMA    : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             |
+            | ALAMAT  : XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             |
+            |           XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             |
+            | REKENING: 4.1.X.XX.XX.XX                                         |
+            | URAIAN  : XXXXXXXXXXXX(NAMA REKENING)                            |
+            | POKOK   : NNNNNNNNNNNNNNNNNNN                                    |
+            | DENDA   : NNNNNNNNNNNNNNNNNNN                                    |
+            | BUNGA   : NNNNNNNNNNNNNNNNNNN                                    |
+            | JUMLAH  : NNNNNNNNNNNNNNNNNNN                                    |
+            |           (DALAM HURUF)                                          |
+            |                                           DD/MM/YYYY             |
+            |    PENYETOR                                 PENERIMA             |
+            |                                                                  |
+            |                                                                  |
+            |                                                                  |
+            |    (NAMA)                                   TELLER/BENDAHARA     |
+            +------------------------------------------------------------------+
+            
+        2. CSV merupakan register penerimaan berdasarkan tanggal terima
+        3. PDF merupakan register penerimaan dalam bentuk PDF group by SKPD dan kode rekening
+           Format PDF disesuaikan dengan hasil CSV
+
+__._,_.___
+Posted by: Agustiana <aa.gustiana@yahoo.com>

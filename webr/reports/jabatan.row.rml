@@ -1,0 +1,4 @@
+<tr>
+    <td>{kode}</td>
+    <td>{nama}</td>
+</tr>
